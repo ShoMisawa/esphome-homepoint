@@ -8,6 +8,7 @@ Utilize M5Stack Fire, ESPHome, and Node-Red to implement Homepoint to monitor th
   - Link for [Home Assistant](https://www.home-assistant.io/)
   - Link for [Node-Red Addon](https://community.home-assistant.io/t/home-assistant-community-add-on-node-red/55023)
   - Link for [MDI Icons](https://pictogrammers.github.io/@mdi/font/5.4.55/)
+  - Link for [Homepoint](https://github.com/sieren/Homepoint)
 
 ## Node-Red Configuration
 By using the events:state block and passing onto the MQTT out to publish the message.
