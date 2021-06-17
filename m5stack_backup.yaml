@@ -72,8 +72,11 @@ display:
           it.line(106.6666,0,106.6666,240);
           it.line(213.3333,0,213.6666, 240);
           
-          it.rectangle(1,121,105.6666,239);
-          it.rectangle(2,120+2,106.6666-2,240-2);
+          it.rectangle(1,121,105.6666,240-3);
+          it.rectangle(2,120+2,106.6666-2,240-4);
+          
+          it.line(0,240-1,106.6666-1,240-1);
+          it.line(0,240-2,106.6666-1,240-2);
           
           
           it.printf(55, 20, id(my_font_15), TextAlign::CENTER, "Front Door");
@@ -107,14 +110,17 @@ display:
           it.printf(55+106.6666*2, 20, id(my_font_15), TextAlign::CENTER, "Right Door");
           it.printf(25+106.6666*2, 85, id(my_font_20), "%s", id(rightGarage).state.c_str());
           
-          it.printf(55, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 1");
-          it.printf(55, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 95+130, id(my_font_20), TextAlign::CENTER, "OFF");
           
-          it.printf(55+106.6666, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 2 ");
-          it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 95+130, id(my_font_20), TextAlign::CENTER, "Stella");
           
-          it.printf(55+106.6666*2, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 3 ");
-          it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");          
+          it.printf(55+106.6666*2, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666*2, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666*2, 95+130, id(my_font_20), TextAlign::CENTER, "ON");
           
       - id: page2
         lambda: |-
@@ -122,8 +128,11 @@ display:
           it.line(106.6666,0,106.6666,240);
           it.line(213.3333,0,213.6666, 240);
           
-          it.rectangle(1+106.6666,121,106.6666-1,239);
-          it.rectangle(2+106.6666,120+2,106.6666-2,240-2);
+          it.rectangle(1+106.6666,121,106.6666-1,240-3);
+          it.rectangle(2+106.6666,120+2,106.6666-2,240-4);
+          
+          it.line(106.6666,240-1,106.6666*2-1,240-1);
+          it.line(106.6666,240-2,106.6666*2-1,240-2);
           
           it.printf(55, 20, id(my_font_15), TextAlign::CENTER, "Front Door");
           
@@ -156,14 +165,17 @@ display:
           it.printf(55+106.6666*2, 20, id(my_font_15), TextAlign::CENTER, "Right Door");
           it.printf(25+106.6666*2, 85, id(my_font_20), "%s", id(rightGarage).state.c_str());
           
-          it.printf(55, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 1");
-          it.printf(55, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 95+130, id(my_font_20), TextAlign::CENTER, "OFF");
           
-          it.printf(55+106.6666, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 2 ");
-          it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 95+130, id(my_font_20), TextAlign::CENTER, "Stella");
           
-          it.printf(55+106.6666*2, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 3 ");
-          it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");     
+          it.printf(55+106.6666*2, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666*2, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666*2, 95+130, id(my_font_20), TextAlign::CENTER, "ON");   
           
       - id: page3
         lambda: |-
@@ -171,8 +183,11 @@ display:
           it.line(106.6666,0,106.6666,240);
           it.line(213.3333,0,213.6666, 240);
           
-          it.rectangle(1+106.6666*2,121,106.6666-1,239);
-          it.rectangle(2+106.6666*2,120+2,106.6666-2,240-2);
+          it.rectangle(1+106.6666*2,121,106.6666-1,240-3);
+          it.rectangle(2+106.6666*2,120+2,106.6666-2,240-4);
+
+          it.line(106.6666*2,240-1,106.6666*3-1,240-1);
+          it.line(106.6666*2,240-2,106.6666*3-1,240-2);
 
           it.printf(55, 20, id(my_font_15), TextAlign::CENTER, "Front Door");
           
@@ -205,14 +220,17 @@ display:
           it.printf(55+106.6666*2, 20, id(my_font_15), TextAlign::CENTER, "Right Door");
           it.printf(25+106.6666*2, 85, id(my_font_20), "%s", id(rightGarage).state.c_str());
           
-          it.printf(55, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 1");
-          it.printf(55, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55, 95+130, id(my_font_20), TextAlign::CENTER, "OFF");
           
-          it.printf(55+106.6666, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 2 ");
-          it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666, 95+130, id(my_font_20), TextAlign::CENTER, "Stella");
           
-          it.printf(55+106.6666*2, 20+130, id(my_font_15), TextAlign::CENTER, "Hector 3 ");
-          it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335");     
+          it.printf(55+106.6666*2, 10+130, id(my_font_15), TextAlign::CENTER, "Living Rm");
+          it.printf(55+106.6666*2, 50+130, id(icon_font), TextAlign::CENTER, "\U000F0335");
+          it.printf(55+106.6666*2, 95+130, id(my_font_20), TextAlign::CENTER, "ON");   
           
       - id: page4
         lambda: |-
@@ -233,7 +251,7 @@ display:
           it.printf(25+106.6666*2, 85, id(my_font_20), "%s", id(rightGarage).state.c_str());
           
           
-          it.printf(55, 20+130, id(my_font_15), TextAlign::CENTER, "Fan");
+          it.printf(55, 20+130, id(my_font_15), TextAlign::CENTER, "Floor");
           
           it.printf(45, 85+130, id(my_font_20), "%s", id(floorFan).state.c_str());
           
@@ -245,8 +263,15 @@ display:
           
           
           
-          it.printf(55+106.6666, 20+130, id(my_font_15), TextAlign::CENTER, "Fan");
-          it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0210");
+          it.printf(55+106.6666, 20+130, id(my_font_15), TextAlign::CENTER, "Desk");
+          
+          
+          if (id(deskFan).state == "on") {
+            it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0210");
+          } else {
+            it.printf(55+106.6666, 60+130, id(icon_font), TextAlign::CENTER, "\U000F081D");
+          }
+          
           it.printf(45+106.6666, 85+130, id(my_font_20), "%s", id(deskFan).state.c_str());
 
           it.printf(55+106.6666*2, 20+130, id(my_font_15), TextAlign::CENTER, "Light");
@@ -254,9 +279,9 @@ display:
           
           
           if (id(officeLight).state == "on") {
-            it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335"); 
-          } else {
             it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F06E8"); 
+          } else {
+            it.printf(55+106.6666*2, 60+130, id(icon_font), TextAlign::CENTER, "\U000F0335"); 
           }
           
             
